@@ -2,7 +2,7 @@ import { Product } from '../../models/product';
 import { ProductService } from '../product.service';
 import { FetchMock } from 'jest-fetch-mock';
 
-describe('I lost too many hours on this', () => {
+describe('Product Service', () => {
   let service = new ProductService();
 
   it('should get all products', async () => {
