@@ -14,6 +14,11 @@ describe('Filter Button', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('renders with disable status', () => {
+    const tree = render(<FilterButton disabled={true} isToggle={false}>Filtrele</FilterButton>).container;
+    expect(tree).toMatchSnapshot();
+  });
+
   it('should be toggled when clicking on it', async () => {
     // Arrange
     const onToggle = jest.fn();

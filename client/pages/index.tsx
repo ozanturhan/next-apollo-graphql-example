@@ -1,9 +1,9 @@
-import React, { useEffect, useReducer, useState } from 'react';
-import { useQuery } from '@apollo/client';
-import { initializeApollo } from '../lib/apolloClient';
-import { PRODUCTS_QUERY } from '@queries';
-import { ButtonGroup, FilterButton, Layout, LikeCount, ProductCard, ProductCardContainer, Wrapper } from '@components';
-import { Product } from '../lib/product';
+import React, {useEffect, useReducer, useState} from 'react';
+import {useQuery} from '@apollo/client';
+import {initializeApollo} from '../lib/apolloClient';
+import {PRODUCTS_QUERY} from '@queries';
+import {ButtonGroup, FilterButton, Layout, LikeCount, ProductCard, ProductCardContainer, Wrapper} from '@components';
+import {Product} from '../lib/product';
 
 const initialState: Product[] | null = null;
 
@@ -38,13 +38,14 @@ function Home() {
     setFilterType(value ? 'Liked' : 'All');
   };
 
+  const likeCount = state?.filter((item) => item.isLiked)?.length;
   return (
     <Layout>
       <Wrapper>
         <ButtonGroup>
-          <LikeCount count={state?.filter((item) => item.isLiked)?.length} />
+          <LikeCount count={likeCount} />
 
-          <FilterButton onToggle={handleFilter} isToggle={filterType === 'Liked'}>
+          <FilterButton disabled={likeCount === 0} onToggle={handleFilter} isToggle={filterType === 'Liked'}>
             Beğendiklerim
           </FilterButton>
         </ButtonGroup>

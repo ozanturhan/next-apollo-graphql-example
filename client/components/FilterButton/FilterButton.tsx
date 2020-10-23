@@ -1,4 +1,4 @@
-import { Box } from '..';
+import {Box} from '..';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -20,6 +20,11 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
+  
+  &:disabled {
+    background-color: grey;
+    color: #cdcdcd; 
+  }
 
   @media only screen and (max-width: 568px) {
     font-size: 1.4rem;
@@ -29,13 +34,14 @@ const Button = styled.button`
 export interface FilterButtonProps {
   children: any;
   isToggle: boolean;
+  disabled?: boolean;
   onToggle?: (val: boolean) => void;
 }
 
-export const FilterButton = ({ children, isToggle, onToggle }: FilterButtonProps) => {
+export const FilterButton = ({ children, isToggle, onToggle, disabled }: FilterButtonProps) => {
   return (
     <Box padding="0px">
-      <Button onClick={() => onToggle && onToggle(!isToggle)} isToggle={isToggle}>
+      <Button disabled={disabled} onClick={() => onToggle && onToggle(!isToggle)} isToggle={isToggle}>
         {children}
       </Button>
     </Box>
