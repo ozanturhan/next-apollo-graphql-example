@@ -15,7 +15,11 @@ describe('Filter Button', () => {
   });
 
   it('renders with disable status', () => {
-    const tree = render(<FilterButton disabled={true} isToggle={false}>Filtrele</FilterButton>).container;
+    const tree = render(
+      <FilterButton disabled={true} isToggle={false}>
+        Filtrele
+      </FilterButton>,
+    ).container;
     expect(tree).toMatchSnapshot();
   });
 

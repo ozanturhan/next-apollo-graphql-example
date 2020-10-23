@@ -1,9 +1,9 @@
-import React, {useEffect, useReducer, useState} from 'react';
-import {useQuery} from '@apollo/client';
-import {initializeApollo} from '../lib/apolloClient';
-import {PRODUCTS_QUERY} from '@queries';
-import {ButtonGroup, FilterButton, Layout, LikeCount, ProductCard, ProductCardContainer, Wrapper} from '@components';
-import {Product} from '../lib/product';
+import React, { useEffect, useReducer, useState } from 'react';
+import { useQuery } from '@apollo/client';
+import { initializeApollo } from '../lib/apolloClient';
+import { PRODUCTS_QUERY } from '@queries';
+import { ButtonGroup, FilterButton, Layout, LikeCount, ProductCard, ProductCardContainer, Wrapper } from '@components';
+import { Product } from '../lib/product';
 
 const initialState: Product[] | null = null;
 
@@ -35,7 +35,7 @@ function Home() {
   useEffect(() => {
     const likeCount = state?.filter((item) => item.isLiked)?.length;
     if (likeCount === 0 && filterType === 'Liked') {
-      handleFilter(false)
+      handleFilter(false);
     }
   }, [state]);
 

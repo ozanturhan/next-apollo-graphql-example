@@ -1,4 +1,4 @@
-import {Box} from '..';
+import { Box } from '..';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -20,10 +20,10 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
-  
+
   &:disabled {
     background-color: grey;
-    color: #cdcdcd; 
+    color: #cdcdcd;
   }
 
   @media only screen and (max-width: 568px) {
