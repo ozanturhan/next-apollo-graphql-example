@@ -32,6 +32,13 @@ function Home() {
     dispatch({ type: 'fill', products: data?.products });
   }, [data]);
 
+  useEffect(() => {
+    const likeCount = state?.filter((item) => item.isLiked)?.length;
+    if (likeCount === 0 && filterType === 'Liked') {
+      handleFilter(false)
+    }
+  }, [state]);
+
   const products: Product[] = state || data?.products;
 
   const handleFilter = (value) => {
@@ -39,6 +46,7 @@ function Home() {
   };
 
   const likeCount = state?.filter((item) => item.isLiked)?.length;
+
   return (
     <Layout>
       <Wrapper>
