@@ -7,8 +7,8 @@ jobs:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - run: ls
       - run: cd client
+      - run: ls
       - run: yarn
       - run: yarn build
   test:
