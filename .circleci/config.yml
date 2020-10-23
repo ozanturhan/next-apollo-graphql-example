@@ -8,19 +8,13 @@ jobs:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - run: cd client
-      - run: ls
-      - run: yarn client
-      - run: yarn build
+      - run: source /.circleci/client_build.sh
   test:
     docker:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - run: cd client
-      - run: yarn test:coverage
-
-
+      - run: source /.circleci/client_test.sh
 
 # Orchestrate our job run sequence
 workflows:
