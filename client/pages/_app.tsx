@@ -1,6 +1,6 @@
 import React from 'react';
 import { ApolloProvider } from '@apollo/client';
-import { useApollo } from '../lib/apolloClient';
+import { useApollo } from '../lib/apollo-client';
 import '.././styles/globals.css';
 
 function MyApp({ Component, pageProps }: any) {

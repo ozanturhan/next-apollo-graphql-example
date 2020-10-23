@@ -1,8 +1,8 @@
 import React from 'react';
 import MyApp from '../pages/_app';
-import {render} from '@testing-library/react';
-import * as apolloClient from '../lib/apolloClient';
-import {ApolloConsumer} from '@apollo/client';
+import { render } from '@testing-library/react';
+import * as apolloClient from '../lib/apollo-client';
+import { ApolloConsumer } from '@apollo/client';
 
 describe('App', () => {
   test('Application should be rendered correctly', () => {

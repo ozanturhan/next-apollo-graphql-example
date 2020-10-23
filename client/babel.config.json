@@ -1,11 +1,18 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow"],
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-flow", "@babel/preset-typescript"],
   "plugins": [
     "inline-react-svg",
     "@babel/plugin-transform-runtime",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-reserved-words",
+    [
+      "@babel/plugin-transform-typescript",
+      {
+        "allowNamespaces": true
+      }
+    ],
     ["babel-plugin-styled-components", { "ssr": true, "displayName": true, "preprocess": false }]
   ],
   "env": {
@@ -14,11 +21,11 @@
         "transform-es2015-modules-commonjs",
         ["babel-plugin-styled-components", { "ssr": true, "displayName": true, "preprocess": false }]
       ],
-      "presets": ["@babel/preset-react"]
+      "presets": ["@babel/preset-react", "@babel/preset-typescript"]
     },
     "test": {
       "plugins": ["transform-es2015-modules-commonjs", "@babel/plugin-proposal-class-properties"],
-      "presets": ["@babel/preset-react"]
+      "presets": ["@babel/preset-react", "@babel/preset-typescript"]
     }
   }
 }

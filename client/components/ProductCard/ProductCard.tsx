@@ -5,7 +5,7 @@ import { ProductDelivery } from '../ProductDelivery/ProductDelivery';
 import { ProductImage } from '../ProductImage/ProductImage';
 import { ProductPrice } from '../ProductPrice/ProductPrice';
 import { ProductTitle } from '../ProductTitle/ProductTitle';
-import { Product } from '../../lib/product';
+import { Product } from '../../interfaces/product';
 
 export interface ProductCardProps {
   item: Product;

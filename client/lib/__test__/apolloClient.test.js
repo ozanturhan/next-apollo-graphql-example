@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { ApolloClient } from '@apollo/client';
-import { initializeApollo, useApollo } from '../apolloClient';
+import { initializeApollo, useApollo } from '../apollo-client';
 
 jest.mock('@apollo/client');
 
