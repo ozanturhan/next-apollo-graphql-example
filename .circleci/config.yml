@@ -8,7 +8,7 @@ jobs:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - run: source /.circleci/client_build.sh
+      - run: source /home/circleci/client/.circleci/client_build.sh
   test:
     docker:
       - image: circleci/node:12.0.0-browsers
