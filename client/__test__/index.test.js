@@ -1,12 +1,12 @@
-import React from 'react';
-import Home, { getServerSideProps } from '../index';
-import { MockedProvider } from '@apollo/client/testing';
-import { PRODUCTS_QUERY } from '@queries';
-import { initializeApollo } from '../../lib/apolloClient';
-import { act, render } from '@testing-library/react';
-import { mount } from 'enzyme';
+import React from 'React';
+import Home, {getServerSideProps} from '../pages';
+import {MockedProvider} from '@apollo/client/testing';
+import {PRODUCTS_QUERY} from '@queries';
+import {initializeApollo} from '../lib/apolloClient';
+import {act, render} from '@testing-library/react';
+import {mount} from 'enzyme';
 
-jest.mock('../../lib/apolloClient.ts');
+jest.mock('../lib/apolloClient.ts');
 
 const mockResult = {
   data: {
