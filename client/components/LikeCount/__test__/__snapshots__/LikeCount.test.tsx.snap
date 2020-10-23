@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.c0:last-child {
+  margin-right: 0;
+}
+
+.c2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.c1 {
+  height: 48px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width:568px) {
+  .c2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width:568px) {
+  .c1 {
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <svg
+      class="c1"
+      viewBox="0 0 391.837 391.837"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+        fill="#d7443e"
+      />
+    </svg>
+    <span
+      class="c2"
+    >
+      0
+       ürün
+    </span>
+  </div>
+</div>
+`;

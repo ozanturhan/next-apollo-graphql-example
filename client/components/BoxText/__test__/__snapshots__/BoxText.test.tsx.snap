@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:568px) {
+  .c0 {
+    font-size: 1.4rem;
+  }
+}
+
+<div>
+  <span
+    class="c0"
+  />
+</div>
+`;
