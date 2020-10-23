@@ -7,7 +7,7 @@ export namespace ProductPageState {
   }
 
   export const STATE: IState = {
-    products: [],
+    products: (null as unknown) as Product[],
     filter: 'All',
   };
 }

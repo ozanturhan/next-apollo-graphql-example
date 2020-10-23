@@ -36,7 +36,7 @@ function Home() {
   };
 
   const productList: Product[] = products || data?.products;
-  const likeCount = products?.filter((item) => item.isLiked)?.length;
+  const likeCount = productList?.filter((item) => item.isLiked)?.length;
 
   return (
     <Layout>
