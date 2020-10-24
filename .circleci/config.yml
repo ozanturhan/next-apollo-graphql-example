@@ -74,6 +74,37 @@ jobs:
           name: Compile Client
           command: yarn client:build
 
+  test_client:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: CLient Unit Tests
+          command: yarn test:client:coverage
+
+  apollo_server_build:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Compile Apollo Server
+          command: yarn build:apollo-server
+
+  test_apollo_server:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Apollo Server Unit Tests
+          command: yarn test:apollo-server:coverage
+
+  mock_server_build:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Compile Mock Server
+          command: yarn build:mock-server
 #
 # Workflow
 #
