@@ -9,9 +9,7 @@ jobs:
     steps:
       - checkout
       - persist_to_workspace:
-          root: project
-          paths:
-             - client
+          root: client
       - run: pwd
       - run: pwd
       - run: ls
