@@ -1,26 +1,16 @@
 version: 2.1
-
 # Define the jobs we want to run for this project
 jobs:
   working_directory: ~/project
-  build:
+  build_test:
     docker:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
       - run: source /home/circleci/project/client_build.sh
-  test:
-    docker:
-      - image: circleci/node:12.0.0-browsers
-    steps:
-      - checkout
-      - run: source /home/circleci/project/client_test.sh
 
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
+      - build_test
