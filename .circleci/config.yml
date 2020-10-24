@@ -59,6 +59,7 @@ jobs:
           name: Set NPM global path
           command: echo 'prefix = ~/.npm' > ~/.npmrc
       - checkout
+      - run: ls
       - *restore_cache
       - *yarn_install
       - *save_cache
@@ -67,6 +68,7 @@ jobs:
     <<: *job_defaults
     steps:
       - *attach_workspace
+      - run: ls
       - run:
           name: Compile Client
           command: client:build
