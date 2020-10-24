@@ -8,9 +8,9 @@ jobs:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - run: ls
+      - run: pwd
       - persist_to_workspace:
-          root: ~/workspace
+          root: ~/project
           paths:
             - app/client
       - run: ls
