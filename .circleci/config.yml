@@ -8,15 +8,7 @@ jobs:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
-      - persist_to_workspace:
-          root: ~/
-          paths: 
-            -  project/client
-      - run: pwd
-      - run: pwd
-      - run: ls
-      - run: yarn
-      - run: yarn build
+      - run: source /home/circleci/project/client_build.sh
   test:
     docker:
       - image: circleci/node:12.0.0-browsers
