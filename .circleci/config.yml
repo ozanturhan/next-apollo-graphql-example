@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 # Define the jobs we want to run for this project
 
 # Configuration
@@ -73,9 +73,12 @@ jobs:
           name: Compile Client
           command: yarn client:build
 
-# Orchestrate our job run sequence
+#
+# Workflow
+#
 workflows:
-  build_and_test:
+  version: 2
+  build-workflow:
     jobs:
       - install:
           filters:
