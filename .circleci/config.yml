@@ -2,17 +2,15 @@ version: 2.1
 
 # Define the jobs we want to run for this project
 jobs:
-  working_directory: ~/workspace/app
+  working_directory: ~/project
   build:
     docker:
       - image: circleci/node:12.0.0-browsers
     steps:
       - checkout
       - run: pwd
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - app/client
+        path: ~/client
+      - run: pwd
       - run: ls
       - run: yarn
       - run: yarn build
