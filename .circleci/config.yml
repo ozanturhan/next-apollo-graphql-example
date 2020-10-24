@@ -29,7 +29,7 @@ restore_cache_var: &restore_cache
 # Save yarn cache
 save_cache_var: &save_cache
   save_cache:
-    name: Save Yarn Package Cache and Cypress binary
+    name: Save Yarn Package Cache
     key: *cache_key
     paths:
       - ~/.cache
@@ -71,38 +71,6 @@ jobs:
           name: Compile Client
           command: client:build
 
-  test_client:
-    <<: *job_defaults
-    steps:
-      - *attach_workspace
-      - run:
-          name: CLient Unit Tests
-          command: yarn test:client:coverage
-
-  apollo_server_build:
-    <<: *job_defaults
-    steps:
-      - *attach_workspace
-      - run:
-          name: Compile Apollo Server
-          command: yarn build:apollo-server
-
-  test_apollo_server:
-    <<: *job_defaults
-    steps:
-      - *attach_workspace
-      - run:
-          name: Apollo Server Unit Tests
-          command: yarn test:apollo-server:coverage
-
-  mock_server_build:
-    <<: *job_defaults
-    steps:
-      - *attach_workspace
-      - run:
-          name: Compile Mock Server
-          command: yarn build:mock-server
-
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
@@ -113,21 +81,5 @@ workflows:
               only: /.*/
 
       - client_build:
-          requires:
-            - install
-
-      - test_client:
-          requires:
-            - install
-
-      - apollo_server_build:
-          requires:
-            - install
-
-      - test_apollo_server:
-          requires:
-            - install
-
-      - mock_server_build:
           requires:
             - install
