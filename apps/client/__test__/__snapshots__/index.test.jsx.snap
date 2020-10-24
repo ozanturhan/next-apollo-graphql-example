@@ -3,19 +3,19 @@
 exports[`Index should be rendered correctly 1`] = `
 <div>
   <div
-    class="Layout-b1bw1s-0 eoVKzC"
+    class="Layout-zrzck-0 bgOuGU"
   >
     <div
-      class="Wrapper-e1775g-0 cCgOfN"
+      class="Wrapper-sc-1lkgs7-0 jjnCXr"
     >
       <div
-        class="ButtonGroup-sc-5v2puq-0 iEXrzR"
+        class="ButtonGroup-ruhkmw-0 fitOAb"
       >
         <div
-          class="Box-sc-1k72gju-0 lfkyrw"
+          class="Box-sc-1hbv20g-0 hGtRHH"
         >
           <svg
-            class="LikeCount__Heart-sc-1c2au0a-0 gUSNkV"
+            class="LikeCount__Heart-c1av5f-0 jNpQuz"
             viewBox="0 0 391.837 391.837"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,39 +25,39 @@ exports[`Index should be rendered correctly 1`] = `
             />
           </svg>
           <span
-            class="BoxText-o9bdxb-0 hPeSsh"
+            class="BoxText-a8f6lv-0 fhwVnc"
           >
             1
              ürün
           </span>
         </div>
         <div
-          class="Box-sc-1k72gju-0 fdNxIG"
+          class="Box-sc-1hbv20g-0 doRRdl"
         >
           <button
-            class="FilterButton__Button-sc-1bx921t-0 ixlYOT"
+            class="FilterButton__Button-sc-9jzwea-0 gguiys"
           >
             Beğendiklerim
           </button>
         </div>
       </div>
       <div
-        class="ProductCardContainer__Container-sc-16wksml-0 bTJrUm"
+        class="ProductCardContainer__Container-sc-1axx2t2-0 bBEipT"
       >
         <h2>
           İlginizi Çekebilecek Ürünler
         </h2>
         <div
-          class="ProductCardContainer__GridContainer-sc-16wksml-1 BjqaQ"
+          class="ProductCardContainer__GridContainer-sc-1axx2t2-1 ibgoXt"
         >
           <div
-            class="ProductCard__Container-sc-1hvs6bu-0 jvmzUk"
+            class="ProductCard__Container-jr7vdt-0 ibiiel"
           >
             <button
-              class="LikeButton__Button-eur3kr-0 fQYiDT"
+              class="LikeButton__Button-nl0htv-0 dsbjUz"
             >
               <svg
-                class="LikeButton__Heart-eur3kr-1 cJjbGJ"
+                class="LikeButton__Heart-nl0htv-1 ABSrV"
                 viewBox="0 0 391.837 391.837"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -71,7 +71,7 @@ exports[`Index should be rendered correctly 1`] = `
               href="http://localhost:4001/image/256/iphone_11.jpg"
             >
               <span
-                class="ProductImage__Container-sc-13be745-0 kWuzFc"
+                class="ProductImage__Container-jau957-0 eEAwFj"
               >
                 <img
                   alt="http://localhost:4001/image/256/iphone_11.jpg"
@@ -79,21 +79,21 @@ exports[`Index should be rendered correctly 1`] = `
                 />
               </span>
               <span
-                class="ProductTitle-sc-12u2ti2-0 dnSkZP"
+                class="ProductTitle-sc-1tx9xcg-0 cIqNJk"
                 data-testid="product-title"
               >
                 Apple iPhone 11 128 GB Pro Cep Telefonu Apple Türkiye Garantili
               </span>
               <span
-                class="ProductPrice-o0iam0-0 fErfTM"
+                class="ProductPrice-sc-17u85r7-0 kDOrHs"
               >
                 1250
               </span>
               <span
-                class="ProductDelivery__ProductDeliveryContainer-sc-11e1vbf-0 cTnboe"
+                class="ProductDelivery__ProductDeliveryContainer-sc-1bjux91-0 jRsjew"
               >
                 <svg
-                  class="ProductDelivery__Icon-sc-11e1vbf-1 iPMphp"
+                  class="ProductDelivery__Icon-sc-1bjux91-1 ciTpiH"
                   viewBox="0 -104 512 512"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -109,13 +109,13 @@ exports[`Index should be rendered correctly 1`] = `
             </a>
           </div>
           <div
-            class="ProductCard__Container-sc-1hvs6bu-0 jvmzUk"
+            class="ProductCard__Container-jr7vdt-0 ibiiel"
           >
             <button
-              class="LikeButton__Button-eur3kr-0 jIZdPW"
+              class="LikeButton__Button-nl0htv-0 ggUova"
             >
               <svg
-                class="LikeButton__Heart-eur3kr-1 cJjbGJ"
+                class="LikeButton__Heart-nl0htv-1 ABSrV"
                 viewBox="0 0 391.837 391.837"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -129,7 +129,7 @@ exports[`Index should be rendered correctly 1`] = `
               href="http://localhost:4001/image/256/iphone_11.jpg"
             >
               <span
-                class="ProductImage__Container-sc-13be745-0 kWuzFc"
+                class="ProductImage__Container-jau957-0 eEAwFj"
               >
                 <img
                   alt="http://localhost:4001/image/256/iphone_11.jpg"
@@ -137,21 +137,21 @@ exports[`Index should be rendered correctly 1`] = `
                 />
               </span>
               <span
-                class="ProductTitle-sc-12u2ti2-0 dnSkZP"
+                class="ProductTitle-sc-1tx9xcg-0 cIqNJk"
                 data-testid="product-title"
               >
                 Apple iPhone 12 128 GB Pro Cep Telefonu Apple Türkiye Garantili
               </span>
               <span
-                class="ProductPrice-o0iam0-0 fErfTM"
+                class="ProductPrice-sc-17u85r7-0 kDOrHs"
               >
                 1250
               </span>
               <span
-                class="ProductDelivery__ProductDeliveryContainer-sc-11e1vbf-0 cTnboe"
+                class="ProductDelivery__ProductDeliveryContainer-sc-1bjux91-0 jRsjew"
               >
                 <svg
-                  class="ProductDelivery__Icon-sc-11e1vbf-1 iPMphp"
+                  class="ProductDelivery__Icon-sc-1bjux91-1 ciTpiH"
                   viewBox="0 -104 512 512"
                   xmlns="http://www.w3.org/2000/svg"
                 >

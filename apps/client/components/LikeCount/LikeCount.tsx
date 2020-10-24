@@ -1,4 +1,4 @@
-import { Box, BoxText } from '..';
+import { Box, BoxText } from '../index';
 import HeartIcon from '../../public/heart.svg';
 import React from 'react';
 import styled from 'styled-components';

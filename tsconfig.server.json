@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
+    "target": "es5",
     "lib": ["dom", "es6"],
     "removeComments": true,
     "strict": true,
@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "**/*.test.ts", "apps/mock-server", "apps/apollo-server/setupJest.ts"]
+  "exclude": []
 }

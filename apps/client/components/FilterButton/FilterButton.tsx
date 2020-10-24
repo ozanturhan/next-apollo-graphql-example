@@ -1,4 +1,4 @@
-import { Box } from '..';
+import { Box } from '../index';
 import React from 'react';
 import styled from 'styled-components';
 

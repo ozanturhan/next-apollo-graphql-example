@@ -1,7 +1,0 @@
-/dist
-/coverage
-/apps/mock-server/var/
-/node_modules
-
-# IDEs and editors
-/.idea
