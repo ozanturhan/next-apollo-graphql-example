@@ -71,7 +71,7 @@ jobs:
       - run: ls
       - run:
           name: Compile Client
-          command: client:build
+          command: yarn client:build
 
 # Orchestrate our job run sequence
 workflows:
