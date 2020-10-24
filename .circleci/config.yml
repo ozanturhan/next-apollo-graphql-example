@@ -72,7 +72,7 @@ jobs:
       - run: ls
       - run:
           name: Compile Client
-          command: yarn client:build
+          command: yarn build:client
 
   test_client:
     <<: *job_defaults
@@ -118,5 +118,21 @@ workflows:
               only: /.*/
 
       - client_build:
+          requires:
+            - install
+
+      - test_client:
+          requires:
+            - install
+
+      - apollo_server_build:
+          requires:
+            - install
+
+      - test_apollo_server:
+          requires:
+            - install
+
+      - mock_server_build:
           requires:
             - install
