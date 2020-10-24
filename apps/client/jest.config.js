@@ -1,5 +1,5 @@
 module.exports = {
-  testPathIgnorePatterns: ['/.next/', '/node_modules/', '/tests/', '/coverage/'],
+  coverageDirectory: '../../coverage/apps/client',
   testRegex: '(/__test__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   moduleNameMapper: {
@@ -12,6 +12,5 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules/'],
   setupFiles: ['./setupJest.ts'],
 };
