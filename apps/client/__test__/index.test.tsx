@@ -86,7 +86,7 @@ describe('Index', () => {
     // Arrange
     const query = jest.fn();
 
-    initializeApollo.mockImplementation(() => ({
+    (initializeApollo as any).mockImplementation(() => ({
       query,
       cache: {
         extract: () => mockResult,
