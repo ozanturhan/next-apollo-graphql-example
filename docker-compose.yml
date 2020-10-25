@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  mock_server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app
+      - /node_modules
+    ports:
+      - 4001:4001
+    networks:
+      - application
+    command: bash -c "yarn build:mock-server && yarn start:mock-server"
+  apollo_server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - MOCK_SERVER=mock_server
+    volumes:
+      - ./:/app
+      - /node_modules
+    ports:
+      - 4000:4000
+    networks:
+      - application
+    depends_on:
+      - mock_server
+    command: bash -c "yarn build:apollo-server && yarn start:apollo-server"
+  client:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - APOLLO_SERVER=apollo_server
+    volumes:
+      - ./:/app
+      - /node_modules
+    ports:
+      - 3000:3000
+    networks:
+      - application
+    depends_on:
+      - apollo_server
+    command: bash -c "yarn build:client && yarn start:client"
+networks:
+  application:

@@ -4,7 +4,7 @@ import { fromJS, Map } from 'immutable';
 
 export class ProductService {
   async getAllProducts(): Promise<Product[]> {
-    return await fetch('http://localhost:4001/products', { method: 'get' })
+    return await fetch(`http://${process.env.MOCK_SERVER}:4001/products`, { method: 'get' })
       .then((res) => res.json())
       .then((products: Product[]) => {
         const immutable = fromJS(products);

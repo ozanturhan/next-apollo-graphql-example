@@ -9,6 +9,12 @@
 - Apollo Server - http://localhost:4000/graphql
 - Mock Server - http://localhost:4001
 
+# Docker Intsallation
+
+```
+docker-compose up -d
+```
+
 # Installation
 
 ```

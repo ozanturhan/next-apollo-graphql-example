@@ -1,6 +1,10 @@
-const withImages = require('next-images');
-module.exports = withImages();
+require('../../dotenv/config');
 
-module.exports = {
+const withImages = require('next-images');
+
+module.exports = withImages({
   distDir: '../../dist/.next',
-};
+  env: {
+    APOLLO_SERVER: process.env.APOLLO_SERVER,
+  },
+});
