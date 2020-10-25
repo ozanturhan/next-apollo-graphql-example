@@ -9,13 +9,17 @@ describe('Apollo Client', () => {
   const restore = jest.fn();
 
   beforeEach(() => {
-    ApolloClient.mockImplementation((client) => ({ ...client, extract: extract, cache: { restore: restore } }));
+    (ApolloClient as any).mockImplementation((client) => ({
+      ...client,
+      extract: extract,
+      cache: { restore: restore },
+    }));
   });
 
   afterEach(() => {
     extract.mockClear();
     restore.mockClear();
-    ApolloClient.mockClear();
+    (ApolloClient as any).mockClear();
   });
 
   it('should be created', () => {
