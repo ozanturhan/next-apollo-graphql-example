@@ -1,0 +1,12 @@
+type Query {
+  products: [Product]
+}
+
+type Product {
+  id: Int
+  name: String
+  image: String
+  price: String
+  cargoType: String
+  isLiked: Boolean
+}

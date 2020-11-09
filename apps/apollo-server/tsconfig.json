@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.server.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "../../dist/apollo-server"
+  },
+  "exclude": ["**/*.test.ts", "setupJest.ts"]
+}

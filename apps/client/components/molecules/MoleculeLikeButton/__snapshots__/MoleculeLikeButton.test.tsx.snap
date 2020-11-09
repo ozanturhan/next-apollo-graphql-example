@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Like Button renders with liked 1`] = `
+.c1 {
+  height: 18px;
+}
+
+.c0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #eeeeee;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 svg path {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  fill: #D7443E;
+  stroke: black;
+  stroke-width: 5;
+}
+
+<div>
+  <button
+    aria-label="Like Button"
+    class="c0"
+    data-testid="like-button"
+  >
+    <svg
+      class="c1"
+      viewBox="0 0 391.837 391.837"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+        fill="#d7443e"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Like Button renders with unliked 1`] = `
+.c1 {
+  height: 18px;
+}
+
+.c0 {
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #eeeeee;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 svg path {
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  fill: #eeeeee;
+  stroke: black;
+  stroke-width: 5;
+}
+
+<div>
+  <button
+    aria-label="Like Button"
+    class="c0"
+    data-testid="like-button"
+  >
+    <svg
+      class="c1"
+      viewBox="0 0 391.837 391.837"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+        fill="#d7443e"
+      />
+    </svg>
+  </button>
+</div>
+`;

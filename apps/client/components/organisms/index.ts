@@ -1,0 +1,1 @@
+export { OrganismProductCard } from './OrganismProductCard';

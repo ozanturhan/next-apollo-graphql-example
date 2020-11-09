@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index should be rendered correctly 1`] = `
+<div>
+  <div>
+    <div
+      class="LayoutMain-sc-1r5k57s-0 ivevOE"
+    >
+      <div
+        class="LayoutWrapper-sc-1w2y03c-0 jNrFNR"
+      >
+        <div
+          class="LayoutButtonGroup-sc-1u1ralu-0 yxuip"
+        >
+          <div
+            class="AtomBox-xqk7u0-0 hEwpl"
+          >
+            <svg
+              class="MoleculeLikeCount__Heart-x750r6-0 cOIaUn"
+              viewBox="0 0 391.837 391.837"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+                fill="#d7443e"
+              />
+            </svg>
+            <span
+              class="AtomBoxText-sc-1byj2u7-0 cfjOPl"
+            >
+              1
+               ürün
+            </span>
+          </div>
+          <div
+            class="AtomBox-xqk7u0-0 cmKWLH"
+          >
+            <button
+              aria-label="Filter Button"
+              class="MoleculeFilterButton__Button-sc-8pdbcc-0 eOtzpw"
+              data-testid="filter-button"
+            >
+              Beğendiklerim
+            </button>
+          </div>
+        </div>
+        <div
+          class="LayoutProductCard__Container-sc-1nwjqbb-0 boVEhN"
+        >
+          <h2>
+            İlginizi Çekebilecek Ürünler
+          </h2>
+          <div
+            class="LayoutProductCard__GridContainer-sc-1nwjqbb-1 CZAeD"
+          >
+            <div
+              class="OrganismProductCard__Container-hcjund-0 cxdXyE"
+              data-testid="product"
+            >
+              <button
+                aria-label="Like Button"
+                class="MoleculeLikeButton__Button-ca33jl-0 kfnCLL"
+                data-testid="like-button"
+              >
+                <svg
+                  class="AtomIconLike-il4cpm-0 gRegNP"
+                  viewBox="0 0 391.837 391.837"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+                    fill="#d7443e"
+                  />
+                </svg>
+              </button>
+              <a
+                href="http://localhost:4001/image/256/iphone_11.jpg"
+              >
+                <span
+                  class="AtomProductImage__Container-yh0bf-0 KBXWY"
+                >
+                  <img
+                    alt="http://localhost:4001/image/256/iphone_11.jpg"
+                    src="http://localhost:4001/image/256/iphone_11.jpg"
+                  />
+                </span>
+                <span
+                  class="AtomProductTitle-zaxbqy-0 bHkplb"
+                  data-testid="product-title"
+                >
+                  Apple iPhone 11 128 GB Pro Cep Telefonu Apple Türkiye Garantili
+                </span>
+                <span
+                  class="AtomProductPrice-sc-1mdynq6-0 kdTYck"
+                >
+                  1250
+                </span>
+                <span
+                  class="MoleculeProductDelivery__ProductDeliveryContainer-sc-143i3qo-0 kdtjjO"
+                >
+                  <svg
+                    class="AtomIconDelivery-trq79q-0 fagWYD"
+                    viewBox="0 -104 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M365 3.016c44.39 10.3 61.371 36.257 82.66 71.984H365zM105.578 78c8.692 0 15 4.195 15 14 0 8.27-6.691 14.977-14.957 15H15c-8.285 0-15 6.719-15 15 0 8.285 6.715 15 15 15h135c8.363 0 15.059 6.71 15.059 15 0 8.285-6.715 15-15 15H15c-8.285 0-15 6.715-15 15s6.715 15 15 15h33v45c0 8.285 6.715 15 15 15h30.152c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46h152.304c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46H497c8.285 0 15-6.715 15-15v-90c0-44.012-46.422-46.934-46.465-47H350c-8.285 0-15-6.715-15-15V0H63c-8.285 0-15 6.715-15 15v33H30c-8.285 0-15 6.715-15 15s6.715 15 15 15zm328.367 148.055c10.739 10.738 10.739 28.156 0 38.894C416.672 282.223 387 269.934 387 245.5c0-24.43 29.672-36.719 46.945-19.445zm-265 0c10.739 10.738 10.739 28.156 0 38.894C151.672 282.223 122 269.934 122 245.5c0-24.43 29.672-36.719 46.945-19.445zm0 0"
+                      fill="#1CB55E"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                   
+                  Ücretsiz
+                </span>
+              </a>
+            </div>
+            <div
+              class="OrganismProductCard__Container-hcjund-0 cxdXyE"
+              data-testid="product"
+            >
+              <button
+                aria-label="Like Button"
+                class="MoleculeLikeButton__Button-ca33jl-0 fqFkfO"
+                data-testid="like-button"
+              >
+                <svg
+                  class="AtomIconLike-il4cpm-0 gRegNP"
+                  viewBox="0 0 391.837 391.837"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M285.257 35.528c58.743.286 106.294 47.836 106.58 106.58 0 107.624-195.918 214.204-195.918 214.204S0 248.165 0 142.108c0-58.862 47.717-106.58 106.58-106.58a105.534 105.534 0 0 1 89.339 48.065 106.578 106.578 0 0 1 89.338-48.065z"
+                    fill="#d7443e"
+                  />
+                </svg>
+              </button>
+              <a
+                href="http://localhost:4001/image/256/iphone_11.jpg"
+              >
+                <span
+                  class="AtomProductImage__Container-yh0bf-0 KBXWY"
+                >
+                  <img
+                    alt="http://localhost:4001/image/256/iphone_11.jpg"
+                    src="http://localhost:4001/image/256/iphone_11.jpg"
+                  />
+                </span>
+                <span
+                  class="AtomProductTitle-zaxbqy-0 bHkplb"
+                  data-testid="product-title"
+                >
+                  Apple iPhone 12 128 GB Pro Cep Telefonu Apple Türkiye Garantili
+                </span>
+                <span
+                  class="AtomProductPrice-sc-1mdynq6-0 kdTYck"
+                >
+                  1250
+                </span>
+                <span
+                  class="MoleculeProductDelivery__ProductDeliveryContainer-sc-143i3qo-0 kdtjjO"
+                >
+                  <svg
+                    class="AtomIconDelivery-trq79q-0 fagWYD"
+                    viewBox="0 -104 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M365 3.016c44.39 10.3 61.371 36.257 82.66 71.984H365zM105.578 78c8.692 0 15 4.195 15 14 0 8.27-6.691 14.977-14.957 15H15c-8.285 0-15 6.719-15 15 0 8.285 6.715 15 15 15h135c8.363 0 15.059 6.71 15.059 15 0 8.285-6.715 15-15 15H15c-8.285 0-15 6.715-15 15s6.715 15 15 15h33v45c0 8.285 6.715 15 15 15h30.152c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46h152.304c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46H497c8.285 0 15-6.715 15-15v-90c0-44.012-46.422-46.934-46.465-47H350c-8.285 0-15-6.715-15-15V0H63c-8.285 0-15 6.715-15 15v33H30c-8.285 0-15 6.715-15 15s6.715 15 15 15zm328.367 148.055c10.739 10.738 10.739 28.156 0 38.894C416.672 282.223 387 269.934 387 245.5c0-24.43 29.672-36.719 46.945-19.445zm-265 0c10.739 10.738 10.739 28.156 0 38.894C151.672 282.223 122 269.934 122 245.5c0-24.43 29.672-36.719 46.945-19.445zm0 0"
+                      fill="#1CB55E"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                   
+                  Ücretsiz
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

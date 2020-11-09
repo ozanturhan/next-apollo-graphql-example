@@ -1,0 +1,138 @@
+version: 2
+# Define the jobs we want to run for this project
+
+# Configuration
+job_defaults_var: &job_defaults
+  working_directory: ~/workspace/app
+  docker:
+    - image: circleci/node:12.0.0-browsers
+
+# Yarn cache key
+cache_var: &cache_key yarn-packages-v2-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+# Install yarn packages
+yarn_install_var: &yarn_install
+  run:
+    name: Yarn Install Packages
+    # We install deps based on the frozen yarn file, so we know it's always the same
+    command: yarn install --frozen-lockfile --non-interactive
+
+# Restore yarn cache
+restore_cache_var: &restore_cache
+  restore_cache:
+    name: Restore Yarn Package Cache
+    keys:
+      - *cache_key
+      - yarn-packages-v2-master
+      - yarn-packages-v2
+
+# Save yarn cache
+save_cache_var: &save_cache
+  save_cache:
+    name: Save Yarn Package Cache
+    key: *cache_key
+    paths:
+      - ~/.cache
+      - node_modules
+
+# Persist the whole working space so we can share it between jobs
+persist_workspace_var: &persist_workspace
+  persist_to_workspace:
+    # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
+    # taken to be the root directory of the workspace.
+    root: ~/workspace
+    # Must be relative path from root
+    paths:
+      - app
+
+# Attach working space
+attach_workspace_var: &attach_workspace
+  attach_workspace:
+    # Must be absolute path or relative path from working_directory
+    at: ~/workspace
+
+jobs:
+  install:
+    <<: *job_defaults
+    steps:
+      - run:
+          name: Set NPM global path
+          command: echo 'prefix = ~/.npm' > ~/.npmrc
+      - checkout
+      - *restore_cache
+      - *yarn_install
+      - *save_cache
+      - *persist_workspace
+
+  client_build:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run: pwd
+      - run: ls
+      - run:
+          name: Compile Client
+          command: yarn build:client
+
+  test_client:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: CLient Unit Tests
+          command: yarn test:client:coverage
+
+  apollo_server_build:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Compile Apollo Server
+          command: yarn build:apollo-server
+
+  test_apollo_server:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Apollo Server Unit Tests
+          command: yarn test:apollo-server:coverage
+
+  mock_server_build:
+    <<: *job_defaults
+    steps:
+      - *attach_workspace
+      - run:
+          name: Compile Mock Server
+          command: yarn build:mock-server
+#
+# Workflow
+#
+workflows:
+  version: 2
+  build-workflow:
+    jobs:
+      - install:
+          filters:
+            tags:
+              only: /.*/
+
+      - client_build:
+          requires:
+            - install
+
+      - test_client:
+          requires:
+            - install
+
+      - apollo_server_build:
+          requires:
+            - install
+
+      - test_apollo_server:
+          requires:
+            - install
+
+      - mock_server_build:
+          requires:
+            - install

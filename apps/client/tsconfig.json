@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["./components"],
+      "@queries": ["./graphql/queries"],
+      "@state-management/*": ["./state-management/*"],
+      "@lib": ["./lib"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

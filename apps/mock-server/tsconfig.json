@@ -1,0 +1,7 @@
+{
+  "extends": "../../tsconfig.server.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "../../dist/mock-server"
+  }
+}
